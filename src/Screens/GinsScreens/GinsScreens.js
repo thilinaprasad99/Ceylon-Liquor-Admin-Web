@@ -21,7 +21,7 @@ const GinsScreens = () => {
   const getGin = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3000/api/public/Gins/get"
+        "http://localhost:3700/api/public/Gins/get"
       );
 
       if (status !== 200) {

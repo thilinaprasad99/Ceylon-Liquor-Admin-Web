@@ -26,7 +26,7 @@ import {
     const addChampagne = async (info) => {
       setIsLoading(true);
       axios
-        .post("http://localhost:3000/api/public/Champagnes/create", info)
+        .post("http://localhost:3700/api/public/Champagnes/create", info)
         .then((response) => {
           const { data, status } = response;
           if (status !== 200) {

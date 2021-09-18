@@ -24,7 +24,7 @@ const DeleteBeers = ({data,handleClose,handleSuccess}) => {
     const deleteBeers = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://localhost:3000/api/public/beers/delete/${id}`)
+          .delete(`http://localhost:3700/api/public/beers/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

@@ -21,7 +21,7 @@ const BrandysScreens = () => {
   const getBrandy = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3000/api/public/Brandys/get"
+        "http://localhost:3700/api/public/Brandys/get"
       );
 
       if (status !== 200) {

@@ -28,7 +28,7 @@ const EditChampagnes = ({data, handleClose, handleSuccess}) => {
   const editChampagne = async (info) => {
     setIsLoading(true);
     axios
-      .patch("http://localhost:3000/api/public/Champagnes/update", info)
+      .patch("http://localhost:3700/api/public/Champagnes/update", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {

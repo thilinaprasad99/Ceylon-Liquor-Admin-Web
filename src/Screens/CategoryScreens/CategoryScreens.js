@@ -21,7 +21,7 @@ const CategoryScreens = () => {
   const getCategorys = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3000/api/public/category/get"
+        "http://localhost:3700/api/public/category/get"
       );
 
       if (status !== 200) {

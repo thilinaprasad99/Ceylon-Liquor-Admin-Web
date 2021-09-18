@@ -21,7 +21,7 @@ const VodkasScreens = () => {
   const getVodka = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3000/api/public/Vodkas/get"
+        "http://localhost:3700/api/public/Vodkas/get"
       );
 
       if (status !== 200) {
