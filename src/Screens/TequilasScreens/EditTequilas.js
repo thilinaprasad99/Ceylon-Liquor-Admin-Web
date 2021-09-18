@@ -30,7 +30,7 @@ const EditTequilas = ({data, handleClose, handleSuccess}) => {
   const editTequila = async (info) => {
     setIsLoading(true);
     axios
-      .patch("http://127.0.0.1:3700/api/public/Tequilas/update", info)
+      .patch("http://193.122.148.31:3700/api/public/Tequilas/update", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {
