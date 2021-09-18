@@ -21,7 +21,7 @@ const RumsScreens = () => {
   const getRums = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3700/api/public/Rums/get"
+        "http://localhost:3000/api/public/Rums/get"
       );
 
       if (status !== 200) {

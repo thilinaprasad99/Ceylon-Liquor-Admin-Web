@@ -24,7 +24,7 @@ const DeleteBrandys = ({data,handleClose,handleSuccess}) => {
     const deleteBrandy = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://localhost:3700/api/public/Brandys/delete/${id}`)
+          .delete(`http://localhost:3000/api/public/Brandys/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

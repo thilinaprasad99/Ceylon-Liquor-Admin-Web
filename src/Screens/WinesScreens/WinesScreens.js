@@ -21,7 +21,7 @@ const WinesScreens = () => {
   const getWine = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://localhost:3700/api/public/Wines/get"
+        "http://localhost:3000/api/public/Wines/get"
       );
 
       if (status !== 200) {

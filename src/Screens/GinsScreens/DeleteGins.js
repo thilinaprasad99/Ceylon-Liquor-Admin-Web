@@ -24,7 +24,7 @@ const DeleteGins = ({data,handleClose,handleSuccess}) => {
     const deleteGin = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://localhost:3700/api/public/Gins/delete/${id}`)
+          .delete(`http://localhost:3000/api/public/Gins/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

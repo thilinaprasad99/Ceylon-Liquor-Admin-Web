@@ -28,7 +28,7 @@ import {
     const addRums = async (info) => {
       setIsLoading(true);
       axios
-        .post("http://localhost:3700/api/public/Rums/create", info)
+        .post("http://localhost:3000/api/public/Rums/create", info)
         .then((response) => {
           const { data, status } = response;
           if (status !== 200) {
