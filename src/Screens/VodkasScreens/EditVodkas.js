@@ -30,7 +30,7 @@ const EditVodkas = ({data, handleClose, handleSuccess}) => {
   const editVodka = async (info) => {
     setIsLoading(true);
     axios
-      .patch("http://localhost:3700/api/public/Vodkas/update", info)
+      .patch("http://127.0.0.1:3700/api/public/Vodkas/update", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {
