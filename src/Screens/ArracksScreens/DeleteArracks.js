@@ -24,7 +24,7 @@ const DeleteArracks = ({data,handleClose,handleSuccess}) => {
     const deleteArrack = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://150.136.82.183:3700/api/public/arracks/delete/${id}`)
+          .delete(`http://localhost:3700/api/public/arracks/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

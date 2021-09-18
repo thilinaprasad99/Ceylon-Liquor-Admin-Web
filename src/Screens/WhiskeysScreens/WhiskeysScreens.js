@@ -21,7 +21,7 @@ const WhiskeysScreens = () => {
   const getWhiskeys = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://150.136.82.183:3700/api/public/Whiskeys/get"
+        "http://localhost:3700/api/public/Whiskeys/get"
       );
 
       if (status !== 200) {

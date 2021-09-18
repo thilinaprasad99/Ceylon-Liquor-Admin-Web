@@ -38,7 +38,7 @@ import {
     const addBeer = async (info) => {
       setIsLoading(true);
       axios
-        .post("http://150.136.82.183:3700/api/public/beers/create", info)
+        .post("http://localhost:3700/api/public/beers/create", info)
         .then((response) => {
           const { data, status } = response;
           if (status !== 200) {

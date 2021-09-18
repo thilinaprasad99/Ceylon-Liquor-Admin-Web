@@ -21,7 +21,7 @@ const ChampagnesScreens = () => {
   const getChampagne = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://150.136.82.183:3700/api/public/Champagnes/get"
+        "http://localhost:3700/api/public/Champagnes/get"
       );
 
       if (status !== 200) {

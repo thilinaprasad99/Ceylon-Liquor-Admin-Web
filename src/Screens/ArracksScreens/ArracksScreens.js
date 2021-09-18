@@ -21,7 +21,7 @@ const ArracksScreens = () => {
   const getArracks = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://150.136.82.183:3700/api/public/arracks/get"
+        "http://localhost:3700/api/public/arracks/get"
       );
 
       if (status !== 200) {

@@ -24,7 +24,7 @@ const DeleteChampagnes = ({data,handleClose,handleSuccess}) => {
     const deleteChampagne = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://150.136.82.183:3700/api/public/Champagnes/delete/${id}`)
+          .delete(`http://localhost:3700/api/public/Champagnes/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

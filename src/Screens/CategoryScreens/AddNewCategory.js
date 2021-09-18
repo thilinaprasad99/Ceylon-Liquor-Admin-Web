@@ -25,7 +25,7 @@ import {
     const addCategorys = async (info) => {
       setIsLoading(true);
       axios
-        .post("http://150.136.82.183:3700/api/public/category/create", info)
+        .post("http://localhost:3700/api/public/category/create", info)
         .then((response) => {
           const { data, status } = response;
           if (status !== 200) {

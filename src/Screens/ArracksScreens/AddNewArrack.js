@@ -28,7 +28,7 @@ const AddNewArrack = ({ handleClose, handleSuccess }) => {
   const addArrack = async (info) => {
     setIsLoading(true);
     axios
-      .post("http://150.136.82.183:3700/api/public/arracks/create", info)
+      .post("http://localhost:3700/api/public/arracks/create", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {

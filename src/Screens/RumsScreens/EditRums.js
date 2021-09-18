@@ -30,7 +30,7 @@ const EditRums = ({data, handleClose, handleSuccess}) => {
   const editRums = async (info) => {
     setIsLoading(true);
     axios
-      .patch("http://150.136.82.183:3700/api/public/Rums/update", info)
+      .patch("http://localhost:3700/api/public/Rums/update", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {
