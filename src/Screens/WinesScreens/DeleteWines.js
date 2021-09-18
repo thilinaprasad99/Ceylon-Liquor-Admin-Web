@@ -24,7 +24,7 @@ const DeleteWines = ({data,handleClose,handleSuccess}) => {
     const deleteWine = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://127.0.0.1:3700/api/public/Wines/delete/${id}`)
+          .delete(`http://193.122.148.31:3700/api/public/Wines/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {
