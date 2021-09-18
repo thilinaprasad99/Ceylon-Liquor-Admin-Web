@@ -24,7 +24,7 @@ const DeleteRums = ({data,handleClose,handleSuccess}) => {
     const deleteRums = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://193.122.148.31:3700/api/public/Rums/delete/${id}`)
+          .delete(`http://localhost:3700/api/public/Rums/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {

@@ -21,7 +21,7 @@ const BeersScreens = () => {
   const getBeers = async () => {
     try {
       const { status, data } = await axios.get(
-        "http://193.122.148.31:3700/api/public/beers/get"
+        "http://localhost:3700/api/public/beers/get"
       );
 
       if (status !== 200) {
