@@ -27,7 +27,7 @@ const EditCategory = ({data, handleClose, handleSuccess}) => {
   const editCategory = async (info) => {
     setIsLoading(true);
     axios
-      .patch("http://localhost:3700/api/public/category/update", info)
+      .patch("http://127.0.0.1:3700/api/public/category/update", info)
       .then((response) => {
         const { data, status } = response;
         if (status !== 200) {
