@@ -1,5 +1,6 @@
 {
   "name": "ceylon-liquor",
+  "homepage": "http://ceylonliquor.slte.lk/home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -30,7 +30,7 @@ import {
     const addWhiskey = async (info) => {
       setIsLoading(true);
       axios
-        .post("http://193.122.148.31:3700/api/public/Whiskeys/create", info)
+        .post("http://150.136.140.225:3700/api/public/Whiskeys/create", info)
         .then((response) => {
           const { data, status } = response;
           if (status !== 200) {

@@ -24,7 +24,7 @@ const DeleteVodkas = ({data,handleClose,handleSuccess}) => {
     const deleteVodka = async (id) => {
         setIsLoading(true);
         axios
-          .delete(`http://193.122.148.31:3700/api/public/Vodkas/delete/${id}`)
+          .delete(`http://150.136.140.225:3700/api/public/Vodkas/delete/${id}`)
           .then((response) => {
             const { data, status } = response;
             if (status !== 200) {
